@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>HTML FORMS & INPUTS EXTRA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1>Travel reservation form</h1>
+    <h3>* denotes mandatory</h3>
+    <form action="/index.html">
+      <div class="start">
+        <label for="fname">Full name<sup>*</sup>:</label>
+        <br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="FirstName LastName"
+          required
+        />
+        <br />
+        <label for="email">Email address<sup>*</sup>:</label>
+        <br />
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="EMAIL_ADDRESS"
+          required
+        />
+      </div>
+      <div class="select">
+        <label for="package">Select Tour Package<sup>*</sup>:</label>
+        <br />
+        <select name="package">
+          <option>Goa</option>
+          <option>New Delphi</option>
+          <option>Cambodgia</option>
+          <option>Trinidad Tobago</option>
+        </select>
+      </div>
+      <div class="date">
+        <label for="date">Arrival date<sup>*</sup>:</label>
+        <br />
+        <input type="date" name="date" id="date" required />
+      </div>
+      <div class="persons">
+        <label for="persons">Number of persons<sup>*</sup>:</label>
+        <br />
+        <input
+          type="number"
+          id="persons"
+          name="persons"
+          placeholder="UNKNOW_TYPE"
+          min="1"
+          required
+        />
+      </div>
+      <div class="checkbox" required>
+        <label for="check">What would you want to avial?<sup>*</sup></label>
+        <br />
+        <label for="board">
+          Boarding<input type="checkbox" id="board" name="boarding" checked />
+        </label>
+        <br />
+        <label for="food">
+          Fooding<input type="checkbox" id="food" name="fooding" />
+        </label>
+        <br />
+        <label for="sight">
+          Sight seeing<input type="checkbox" id="sight" name="sightseeing" />
+        </label>
+      </div>
+      <div class="discount">
+        <label for="discount">Discount Coupon code:</label>
+        <br />
+        <input
+          type="code"
+          id="discount"
+          name="discountcode"
+          placeholder="UNKNOW_TYPE"
+        />
+      </div>
+      <div class="conditions">
+        <label for="terms">
+          Terms and Conditions<sup>*</sup>
+          <br />
+          <input type="radio" id="terms" name="termsandconditions" checked /> I
+          agree
+        </label>
+        <label for="terms2">
+          <input type="radio" id="terms2" name="termsandconditions" /> I
+          disagree
+        </label>
+      </div>
+      <div class="submit">
+        <button type="submit">
+          Complete reservation
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
